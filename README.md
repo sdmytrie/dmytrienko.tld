@@ -1,5 +1,5 @@
 # dmytrienko.tld
 * Build
 
-<addr>docker-compose build</addr>
+'docker-compose build'
 docker-compose up
