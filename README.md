@@ -2,5 +2,5 @@
 <li>
   <ul>Build</ul>
 </li>
-docker-compose build
+<console>docker-compose build</console>
 docker-compose up
