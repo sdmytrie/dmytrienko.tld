@@ -9,5 +9,5 @@ docker-compose up
 ```
 docker-compose exec php bash
 cd /var/www/symfony
-composer create project money-pp.dmytrienko.tld
+composer create-project symfony/framework-standard-edition money-pp.dmytrienko.tld
 ```
