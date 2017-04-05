@@ -8,6 +8,7 @@ services:
             - 3306:3306
         volumes:
             - "./mysql/var/lib/mysql:/var/lib/mysql"
+            - "/opt/www/money-pp.dmytrienko.tld/db/moneypp:/var/lib/mysql/moneypp"
         environment:
             MYSQL_ROOT_PASSWORD: root
     redis:
@@ -43,4 +44,12 @@ services:
         volumes_from:
             - php
             - nginx
+
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        ports:
+            - "8080:80"
+        links:
+            - db
+
 
